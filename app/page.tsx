@@ -78,14 +78,11 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="text-center mb-12"
           >
-            <h1 className="text-5xl sm:text-6xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
-              Nelson Specialty
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+              Nelson Specialty Industries
             </h1>
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-6 text-gray-800">
-              Industrial
-            </h2>
-            <p className="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-              Let's get your industrial project started!
+            <p className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-8 max-w-4xl mx-auto leading-relaxed">
+              NSI is a specialized construction management and growth-acceleration firm that partners with established contractors to dramatically improve win rates, control costs, eliminate surprises, and scale operations without adding chaos.
             </p>
             <GlassButton variant="primary" href="#contact" className="text-lg px-8 py-4">
               CONTACT US
