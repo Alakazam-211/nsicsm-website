@@ -128,7 +128,7 @@ export default function Home() {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <GlassCard variant="dark" className="p-8 md:p-12 bg-gradient-to-br from-blue-600/20 to-cyan-600/20">
+            <GlassCard className="p-8 md:p-12">
               <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">
                 HELPING REBUILD FACILITIES IN THE WAKE OF UNPRECEDENTED HURRICANE DAMAGE
               </h2>
