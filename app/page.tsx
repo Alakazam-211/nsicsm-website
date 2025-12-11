@@ -53,10 +53,7 @@ export default function Home() {
       <Navigation
         logo="/NSI_transp.png"
         logoAlt="Nelson Specialty Industrial Logo"
-        links={[
-          { href: '#services', label: 'Services' },
-          { href: '#about', label: 'About' },
-        ]}
+        links={[]}
         cta={{ href: '#contact', label: 'Contact Us' }}
       />
 
@@ -82,28 +79,6 @@ export default function Home() {
             <GlassButton variant="primary" href="#contact" className="text-lg px-8 py-4">
               CONTACT US
             </GlassButton>
-          </motion.div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-          >
-            <GlassCard className="p-8 md:p-12">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">ABOUT US</h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Serving the Louisiana area, Nelson Specialty Industrial specializes in your industrial building and restoration needs. Our company can restore your facility after significant fire or water damage. Nelson Specialty Industrial responds to restoration emergencies with urgency to restore your facility in the quickest possible manner.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Loss from fire and water damage is a stressful, traumatic experience and damage begins instantly, so minutes count: Our trained and experienced technicians will begin mitigation efforts as soon as the extent of the damage is assessed.
-              </p>
-            </GlassCard>
           </motion.div>
         </div>
       </section>
@@ -161,61 +136,84 @@ export default function Home() {
                 Nelson Specialty Industrial is proud to help businesses across Louisiana rebuild and restore their facilities after devastating natural disasters. Our experienced team understands the urgency of getting your operations back online.
               </p>
               <GlassButton variant="primary" href="#contact" className="text-lg px-8 py-4">
-                Get Started
+                Contact Us
               </GlassButton>
             </GlassCard>
           </motion.div>
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Contact & About Section */}
       <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <GlassCard className="p-8 md:p-12">
-              <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800 text-center">CONTACT US</h2>
-              <p className="text-lg text-gray-700 mb-8 text-center">
-                Tell us about your project, fill in your contact details and we'll get back to you.
-              </p>
-              
-              <div className="space-y-6">
-                <div>
-                  <h3 className="text-xl font-semibold mb-4 text-gray-800">Get In Touch</h3>
-                  <p className="text-gray-700 mb-2">
-                    <strong>Call:</strong> 225-316-0253
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {/* About Us / Our Story */}
+              <GlassCard className="p-8 md:p-12">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">Our Story</h2>
+                <div className="space-y-4">
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Serving the Louisiana area, Nelson Specialty Industrial specializes in your industrial building and restoration needs. Our company can restore your facility after significant fire or water damage.
                   </p>
-                  <p className="text-gray-700 mb-2">
-                    <strong>Nelson Specialty Industrial</strong>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    Nelson Specialty Industrial responds to restoration emergencies with urgency to restore your facility in the quickest possible manner. Loss from fire and water damage is a stressful, traumatic experience and damage begins instantly, so minutes count: Our trained and experienced technicians will begin mitigation efforts as soon as the extent of the damage is assessed.
                   </p>
-                  <p className="text-gray-700 mb-2">
-                    36791 Greenwell Springs Rd. Suite A
-                  </p>
-                  <p className="text-gray-700 mb-4">
-                    Greenwell Springs, La. 70739
-                  </p>
-                  <div className="text-gray-700">
-                    <p><strong>Mon - Fri:</strong> 9:00 am - 5:00 pm</p>
-                    <p><strong>Sat - Sun:</strong> Closed</p>
-                  </div>
                 </div>
 
-                <div className="mt-8">
-                  <div 
-                    style={{width:'100%',height:'500px'}} 
-                    data-fillout-id="dBu1HhbbZLus" 
-                    data-fillout-embed-type="standard" 
-                    data-fillout-inherit-parameters 
-                    data-fillout-dynamic-resize 
-                    data-fillout-domain="forms.discover-nocode.com"
-                  />
+                {/* Get In Touch */}
+                <div className="mt-8 pt-8 border-t border-gray-200">
+                  <h3 className="text-xl font-semibold mb-4 text-gray-800">Get in Touch</h3>
+                  <div className="space-y-3">
+                    <div>
+                      <p className="text-gray-700">
+                        <strong>Location</strong>
+                      </p>
+                      <p className="text-gray-700">
+                        36791 Greenwell Springs Rd. Suite A<br />
+                        Greenwell Springs, La. 70739<br />
+                        United States
+                      </p>
+                    </div>
+                    <div>
+                      <p className="text-gray-700">
+                        <strong>Phone</strong>
+                      </p>
+                      <p className="text-gray-700">225-316-0253</p>
+                    </div>
+                    <div>
+                      <p className="text-gray-700">
+                        <strong>Hours</strong>
+                      </p>
+                      <p className="text-gray-700">
+                        Mon - Fri: 9:00 am - 5:00 pm<br />
+                        Sat - Sun: Closed
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </GlassCard>
+              </GlassCard>
+
+              {/* Contact Form */}
+              <GlassCard className="p-8 md:p-12">
+                <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">Contact Us</h2>
+                <p className="text-lg text-gray-700 mb-8">
+                  Send us a message
+                </p>
+                <div 
+                  style={{width:'100%',height:'500px'}} 
+                  data-fillout-id="dBu1HhbbZLus" 
+                  data-fillout-embed-type="standard" 
+                  data-fillout-inherit-parameters 
+                  data-fillout-dynamic-resize 
+                  data-fillout-domain="forms.discover-nocode.com"
+                />
+              </GlassCard>
+            </div>
           </motion.div>
         </div>
       </section>
