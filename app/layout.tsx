@@ -16,7 +16,9 @@ export const metadata: Metadata = {
   title: "Nelson Specialty Industrial - Industrial Construction & Restoration",
   description: "Serving Louisiana with industrial construction, facility restoration, and emergency response services. Specializing in industrial fire and water damage restoration.",
   icons: {
-    icon: '/NSI_fav.png',
+    icon: [
+      { url: '/NSI_fav.png', type: 'image/png' },
+    ],
     apple: '/NSI512.jpg',
   },
 };
