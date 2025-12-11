@@ -4,9 +4,19 @@ import Navigation from './components/Navigation';
 import GlassCard from './components/GlassCard';
 import GlassButton from './components/GlassButton';
 import { motion } from 'framer-motion';
-import Script from 'next/script';
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    // Load Fillout embed script if not already loaded
+    if (!document.querySelector('script[src="https://server.fillout.com/embed/v1/"]')) {
+      const script = document.createElement('script');
+      script.src = 'https://server.fillout.com/embed/v1/';
+      script.async = true;
+      document.body.appendChild(script);
+    }
+  }, []);
+
   const services = [
     {
       title: 'Industrial Construction',
@@ -211,7 +221,7 @@ export default function Home() {
                   data-fillout-inherit-parameters 
                   data-fillout-dynamic-resize 
                   data-fillout-domain="forms.discover-nocode.com"
-                />
+                ></div>
               </GlassCard>
             </div>
           </motion.div>
@@ -227,8 +237,6 @@ export default function Home() {
         </div>
       </footer>
 
-      {/* Fillout Form Script */}
-      <Script src="https://server.fillout.com/embed/v1/" strategy="afterInteractive" />
     </div>
   );
 }
