@@ -5,6 +5,7 @@ import GlassCard from './components/GlassCard';
 import GlassButton from './components/GlassButton';
 import { motion } from 'framer-motion';
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 export default function Home() {
   useEffect(() => {
@@ -234,7 +235,15 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {/* Company Info */}
             <div className="lg:col-span-2">
-              <h3 className="text-2xl font-bold mb-4 text-gray-800">Nelson Specialty Industrial</h3>
+              <div className="mb-4">
+                <Image
+                  src="/NSI_transp.png"
+                  alt="Nelson Specialty Industrial Logo"
+                  width={200}
+                  height={60}
+                  className="h-12 w-auto object-contain"
+                />
+              </div>
               <p className="text-gray-600 mb-4 max-w-md">
                 Serving Louisiana with industrial construction, facility restoration, and emergency response services. Specializing in industrial fire and water damage restoration.
               </p>
