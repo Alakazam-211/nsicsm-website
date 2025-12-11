@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Nelson Specialty Industrial - Industrial Construction & Restoration",
-  description: "Serving Louisiana with industrial construction, facility restoration, and emergency response services. Specializing in industrial fire and water damage restoration.",
+  description: "Serving nationwide with industrial construction, facility restoration, and emergency response services. Specializing in industrial fire and water damage restoration.",
   icons: {
     icon: [
       { url: '/NSI_fav.png', type: 'image/png' },

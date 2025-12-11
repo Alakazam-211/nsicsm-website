@@ -40,7 +40,7 @@ export default function Home() {
     },
     {
       title: 'Full Facility Renovations',
-      description: 'When you select Nelson Specialty Industrial to renovate your facility, you are choosing a locally owned company servicing Louisiana and surrounding areas. Our goal is to redefine the renovation experience by providing outstanding craftsmanship, efficient project management, and second-to-none customer service for industrial facilities.',
+      description: 'When you select Nelson Specialty Industrial to renovate your facility, you are choosing a company servicing nationwide. Our goal is to redefine the renovation experience by providing outstanding craftsmanship, efficient project management, and second-to-none customer service for industrial facilities.',
       icon: (
         <svg className="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
@@ -144,7 +144,7 @@ export default function Home() {
                 HELPING REBUILD FACILITIES IN THE WAKE OF UNPRECEDENTED HURRICANE DAMAGE
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                Nelson Specialty Industrial is proud to help businesses across Louisiana rebuild and restore their facilities after devastating natural disasters. Our experienced team understands the urgency of getting your operations back online.
+                Nelson Specialty Industrial is proud to help businesses nationwide rebuild and restore their facilities after devastating natural disasters. Our experienced team understands the urgency of getting your operations back online.
               </p>
               <GlassButton variant="primary" href="#contact" className="text-lg px-8 py-4">
                 Contact Us
@@ -169,7 +169,7 @@ export default function Home() {
                 <h2 className="text-3xl sm:text-4xl font-bold mb-6 text-gray-800">Our Story</h2>
                 <div className="space-y-4">
                   <p className="text-lg text-gray-700 leading-relaxed">
-                    Serving the Louisiana area, Nelson Specialty Industrial specializes in your industrial building and restoration needs. Our company can restore your facility after significant fire or water damage.
+                    Serving nationwide, Nelson Specialty Industrial specializes in your industrial building and restoration needs. Our company can restore your facility after significant fire or water damage.
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed">
                     Nelson Specialty Industrial responds to restoration emergencies with urgency to restore your facility in the quickest possible manner. Loss from fire and water damage is a stressful, traumatic experience and damage begins instantly, so minutes count: Our trained and experienced technicians will begin mitigation efforts as soon as the extent of the damage is assessed.
@@ -245,7 +245,7 @@ export default function Home() {
                 />
               </div>
               <p className="text-gray-600 mb-4 max-w-md">
-                Serving Louisiana with industrial construction, facility restoration, and emergency response services. Specializing in industrial fire and water damage restoration.
+                Serving nationwide with industrial construction, facility restoration, and emergency response services. Specializing in industrial fire and water damage restoration.
               </p>
             </div>
 
