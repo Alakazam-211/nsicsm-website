@@ -53,12 +53,10 @@ export default function Home() {
         logo="/NSI_transp.png"
         logoAlt="Nelson Specialty Industrial Logo"
         links={[
-          { href: '/', label: 'Home' },
           { href: '#services', label: 'Services' },
           { href: '#about', label: 'About' },
-          { href: '#contact', label: 'Contact' },
         ]}
-        cta={{ href: '#contact', label: 'Get Started' }}
+        cta={{ href: '#contact', label: 'Contact Us' }}
       />
 
       {/* Hero Section */}
