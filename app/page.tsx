@@ -4,6 +4,7 @@ import Navigation from './components/Navigation';
 import GlassCard from './components/GlassCard';
 import GlassButton from './components/GlassButton';
 import { motion } from 'framer-motion';
+import Script from 'next/script';
 
 export default function Home() {
   const services = [
@@ -203,39 +204,16 @@ export default function Home() {
                   </div>
                 </div>
 
-                <form className="space-y-4 mt-8">
-                  <div>
-                    <input
-                      type="text"
-                      placeholder="Name"
-                      className="glass-input-enhanced w-full px-4 py-3 rounded-lg"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="tel"
-                      placeholder="Phone"
-                      className="glass-input-enhanced w-full px-4 py-3 rounded-lg"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="email"
-                      placeholder="Email"
-                      className="glass-input-enhanced w-full px-4 py-3 rounded-lg"
-                    />
-                  </div>
-                  <div>
-                    <textarea
-                      placeholder="About Your Project"
-                      rows={5}
-                      className="glass-input-enhanced w-full px-4 py-3 rounded-lg resize-none"
-                    />
-                  </div>
-                  <GlassButton variant="primary" className="w-full text-lg py-4">
-                    Send Message
-                  </GlassButton>
-                </form>
+                <div className="mt-8">
+                  <div 
+                    style={{width:'100%',height:'500px'}} 
+                    data-fillout-id="dBu1HhbbZLus" 
+                    data-fillout-embed-type="standard" 
+                    data-fillout-inherit-parameters 
+                    data-fillout-dynamic-resize 
+                    data-fillout-domain="forms.discover-nocode.com"
+                  />
+                </div>
               </div>
             </GlassCard>
           </motion.div>
@@ -250,6 +228,9 @@ export default function Home() {
           </p>
         </div>
       </footer>
+
+      {/* Fillout Form Script */}
+      <Script src="https://server.fillout.com/embed/v1/" strategy="afterInteractive" />
     </div>
   );
 }
