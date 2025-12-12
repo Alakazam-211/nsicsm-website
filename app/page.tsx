@@ -78,7 +78,7 @@ export default function Home() {
             className="text-center mb-8 sm:mb-12"
           >
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent leading-tight pb-1 sm:pb-2 px-2">
-              Nelson Specialty Industries
+              Nelson Specialty Industrial
             </h1>
             <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-700 mb-6 sm:mb-8 max-w-4xl mx-auto leading-relaxed px-2">
               NSI is a specialized construction management and growth-acceleration firm that partners with established contractors to dramatically improve win rates, control costs, eliminate surprises, and scale operations without adding chaos.
